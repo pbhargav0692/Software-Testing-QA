@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="56907" started-at="2017-11-30T23:05:41Z" finished-at="2017-11-30T23:06:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="56907" started-at="2017-11-30T23:05:41Z" finished-at="2017-11-30T23:06:38Z">
+      <class name="com.maven.testngpom.product.ProductTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.maven.testngpom.product.ProductTest@ff5b51f]" name="setup" is-config="true" duration-ms="8456" started-at="2017-11-30T15:05:41Z" finished-at="2017-11-30T15:05:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ProductItemAddTest()[pri:0, instance:com.maven.testngpom.product.ProductTest@ff5b51f]" name="ProductItemAddTest" duration-ms="10079" started-at="2017-11-30T15:05:49Z" finished-at="2017-11-30T15:05:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductItemAddTest -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:com.maven.testngpom.product.ProductTest@ff5b51f]" name="cleanup" is-config="true" duration-ms="15" started-at="2017-11-30T15:05:59Z" finished-at="2017-11-30T15:05:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.maven.testngpom.product.ProductTest@ff5b51f]" name="setup" is-config="true" duration-ms="7485" started-at="2017-11-30T15:05:59Z" finished-at="2017-11-30T15:06:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ProductListCheckTest()[pri:0, instance:com.maven.testngpom.product.ProductTest@ff5b51f]" name="ProductListCheckTest" duration-ms="9051" started-at="2017-11-30T15:06:07Z" finished-at="2017-11-30T15:06:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductListCheckTest -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:com.maven.testngpom.product.ProductTest@ff5b51f]" name="cleanup" is-config="true" duration-ms="9" started-at="2017-11-30T15:06:16Z" finished-at="2017-11-30T15:06:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.maven.testngpom.product.ProductTest@ff5b51f]" name="setup" is-config="true" duration-ms="8593" started-at="2017-11-30T15:06:16Z" finished-at="2017-11-30T15:06:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="ProductRemoveTest()[pri:0, instance:com.maven.testngpom.product.ProductTest@ff5b51f]" name="ProductRemoveTest" duration-ms="13164" started-at="2017-11-30T15:06:25Z" finished-at="2017-11-30T15:06:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductRemoveTest -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:com.maven.testngpom.product.ProductTest@ff5b51f]" name="cleanup" is-config="true" duration-ms="10" started-at="2017-11-30T15:06:38Z" finished-at="2017-11-30T15:06:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- com.maven.testngpom.product.ProductTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
