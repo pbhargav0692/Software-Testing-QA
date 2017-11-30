@@ -1,0 +1,41 @@
+package com.Maven.TestNG.Test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
+
+//import java.util.concurrent.TimeUnit;
+
+import org.testng.annotations.Test;
+
+public class EcommercetLoginTest{
+	@BeforeTest
+	public void setup(){
+		
+	}
+	
+	@Test
+	public void EcommerceLogin() throws Exception {
+
+		WebDriver driver = new FirefoxDriver();
+		driver.get("http://ecommerce.saipratap.net/customerlogin.php");
+		WebElement emailID = driver.findElement(By.id("email"));
+		emailID.sendKeys("pbhargav0692@gmail.com");
+
+		WebElement PassWord = driver.findElement(By.id("password"));
+		PassWord.sendKeys("Krupa_patel10");
+
+		WebElement LoginID = driver.findElement(By.linkText("Login"));
+		LoginID.click();
+		Thread.sleep(1000);
+	
+	@AfterTest
+		
+		driver.close();
+		
+	}
+
+	
+}

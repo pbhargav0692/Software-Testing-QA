@@ -1,0 +1,52 @@
+package com.maven.selenium.test;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class EcommernceWebsiteRegistrationTest implements EcommerceConstant{
+
+	private static final String BIRTHYEAR_DATA = "1992";
+	private static final String BIRTHMONTH_DATA = "09";
+	private static final String BIRTHMONTH_LOCATOR = "month";
+	private static final String BIRTHDATE_LOCATOR = "day";
+	private static final String BIRTHDATE_DATA = "06";
+	private static final String LASTNAME_LOCATOR = "lname";
+	private static final String LASTNAME_DATA = "Patel";
+	private static final String FIRSTNAME_DATA = "Bhargavkumar";
+	private static final String FIRSTNAME_LOCATOR = "fname";
+	private static final String GENDER_LOCATOR = "html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/form/table/tbody/tr[5]/td/table/tbody/tr[1]/td[4]";
+	private static final String SIGNUP_LOCATOR = "html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td[1]/table/tbody/tr[2]/td[2]/a";
+	private static final String ACCOUNT_LOCATOR = "ACCOUNT";
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
+		
+		driver.get(WEBPAGE_URL);
+		driver.findElement(By.linkText(ACCOUNT_LOCATOR)).click();
+		driver.findElement(By.xpath(SIGNUP_LOCATOR)).click();
+		driver.findElement(By.xpath(GENDER_LOCATOR)).click();
+		driver.findElement(By.id(FIRSTNAME_LOCATOR)).sendKeys(FIRSTNAME_DATA);
+		driver.findElement(By.id(LASTNAME_LOCATOR)).sendKeys(LASTNAME_DATA);
+		driver.findElement(By.id(BIRTHDATE_LOCATOR)).sendKeys(BIRTHDATE_DATA);
+		driver.findElement(By.id(BIRTHMONTH_LOCATOR)).sendKeys(BIRTHMONTH_DATA);
+		driver.findElement(By.id("year")).sendKeys(BIRTHYEAR_DATA);
+		driver.findElement(By.id("houseno")).sendKeys("125");
+		driver.findElement(By.id("add1")).sendKeys("3939 Monroe Ave");
+		driver.findElement(By.id("city")).sendKeys("Fremont");
+		driver.findElement(By.id("state")).sendKeys("California");
+		driver.findElement(By.id("country")).sendKeys("United States");
+		driver.findElement(By.id("postcode")).sendKeys("94536");
+		driver.findElement(By.id("phone")).sendKeys("2056399155");
+		driver.findElement(By.id("password")).sendKeys("Krupa_patel10");
+		driver.findElement(By.id("cpassword")).sendKeys("Krupa_patel10");
+		driver.findElement(By.id("newsletter")).click();
+		driver.findElement(By.id("terms")).click();
+		driver.findElement(By.name("Submit")).click();
+	}
+}

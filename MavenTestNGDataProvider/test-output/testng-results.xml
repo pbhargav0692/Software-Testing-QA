@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51409" started-at="2017-11-29T19:47:51Z" finished-at="2017-11-29T19:48:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="51409" started-at="2017-11-29T19:47:51Z" finished-at="2017-11-29T19:48:42Z">
+      <class name="com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="setup" is-config="true" duration-ms="7720" started-at="2017-11-29T11:47:51Z" finished-at="2017-11-29T11:47:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="EcommLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="EcommLoginTest" duration-ms="5122" started-at="2017-11-29T11:47:59Z" data-provider="SuccessIds" finished-at="2017-11-29T11:48:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EcommLoginTest -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="cleanup" is-config="true" duration-ms="13" started-at="2017-11-29T11:48:04Z" finished-at="2017-11-29T11:48:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="setup" is-config="true" duration-ms="7570" started-at="2017-11-29T11:48:04Z" finished-at="2017-11-29T11:48:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="EcommLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="EcommLoginTest" duration-ms="4896" started-at="2017-11-29T11:48:11Z" data-provider="SuccessIds" finished-at="2017-11-29T11:48:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test2@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EcommLoginTest -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="cleanup" is-config="true" duration-ms="13" started-at="2017-11-29T11:48:16Z" finished-at="2017-11-29T11:48:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="setup" is-config="true" duration-ms="9000" started-at="2017-11-29T11:48:16Z" finished-at="2017-11-29T11:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="EcommLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="EcommLoginTest" duration-ms="4593" started-at="2017-11-29T11:48:25Z" data-provider="SuccessIds" finished-at="2017-11-29T11:48:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test3@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EcommLoginTest -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="cleanup" is-config="true" duration-ms="12" started-at="2017-11-29T11:48:30Z" finished-at="2017-11-29T11:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="setup" is-config="true" duration-ms="7695" started-at="2017-11-29T11:48:30Z" finished-at="2017-11-29T11:48:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="EcommLoginTest(java.lang.String, java.lang.String)[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="EcommLoginTest" duration-ms="4719" started-at="2017-11-29T11:48:37Z" data-provider="SuccessIds" finished-at="2017-11-29T11:48:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test4@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EcommLoginTest -->
+        <test-method status="PASS" signature="cleanup()[pri:0, instance:com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest@5702b3b1]" name="cleanup" is-config="true" duration-ms="13" started-at="2017-11-29T11:48:42Z" finished-at="2017-11-29T11:48:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- com.MavenTestNG.Dataprovider.Test.MavenTestNGDataproviderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

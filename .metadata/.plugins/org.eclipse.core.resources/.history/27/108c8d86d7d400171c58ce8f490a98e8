@@ -1,0 +1,31 @@
+package com.Maven.TestNG.Test;
+
+import org.openqa.selenium.By;
+//import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+//import java.util.concurrent.TimeUnit;
+
+import org.testng.annotations.Test;
+
+import junit.framework.Assert;
+
+public class EcommercetLoginTest extends BaseTest implements EcommerceConstant{
+	
+	@Test
+	public void EcommerceLogin() throws Exception {
+
+		WebElement emailID = driver.findElement(By.id(EMAIL_LOCATOR));
+		emailID.sendKeys("pbhargav0692@gmail.com");
+
+		WebElement PassWord = driver.findElement(By.id("password"));
+		PassWord.sendKeys("Krupa_patel10");
+
+		WebElement LoginID = driver.findElement(By.linkText("Login"));
+		LoginID.click();
+		Thread.sleep(1000);
+		
+		Assert.assertEquals(driver.getTitle(), "Ez Shop Online");
+	}
+
+}

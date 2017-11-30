@@ -1,0 +1,40 @@
+package com.maven.selenium.test;
+
+import java.sql.Driver;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import junit.framework.Assert;
+
+public class EcommerceWebsiteTest {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new FirefoxDriver();
+		
+		driver.manage().window().maximize();
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		driver.get("http://ecommerce.saipratap.net/customerlogin.php");
+		
+		driver.findElement(By.id("email")).sendKeys("test1@gmail.com");
+		driver.findElement(By.id("password")).sendKeys("test123");
+		driver.findElement(By.linkText("Login")).click();
+		Thread.sleep(1000);
+		Assert.assertEquals(driver.getTitle(), "EZ SHOP PAGE");
+		
+		Driver.findElement(By.id(EMAIL_ID_LOCATOR)).sendKeys(emailId);
+		Driver.findElement(By.id(PASSWORD_LOCATOR)).sendKeys(pwd);
+		Driver.findElement(By.linkText(LOGIN_LOCATOR)).click();
+		Thread.sleep(3000);
+		Assert.assertEquals(Driver.getTitle(), EZ_SHOP_PAGE_TITLE);
+		
+		
+
+	}
+
+}

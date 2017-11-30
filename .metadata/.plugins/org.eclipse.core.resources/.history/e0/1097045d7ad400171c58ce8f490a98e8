@@ -1,0 +1,76 @@
+package com.maven.selenium.test;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class OrderTest {
+
+	public static void main(String[] args) {
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.get(WEBPAGE_URL);
+		driver.findElement(By.id(EMAIL_LOCATOR)).sendKeys(EMAIL_DATA);
+		driver.findElement(By.id(PASSWORD_LOCATOR)).sendKeys(PASSWORD_DATA);
+		driver.findElement(By.linkText(LOGIN_LOCATOR)).click();
+		driver.findElement(By.linkText(PRODUCTS_LOCATOR)).click();
+		System.out.println("Choose your favurite Product");
+		driver.findElement(By.xpath(PRODUCT_LOCATOR)).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(PRDUCT_DESCRIPTION_LOCATOR)).click();
+		Thread.sleep(3000);
+		driver.findElement(By.linkText(MY_CART_LOCATOR)).click();
+		boolean test = true;
+		if (Driver.findElement(By.xpath(CART_DATA_LOCATOR)) != null) {
+			System.out.println("The product has been added successfully");
+		} else {
+			System.out.println("The product has not been added yet!");
+			test = false;
+		}
+		Assert.assertEquals(test, true);
+		driver.findElement(By.linkText("Checkout")).click();
+		EcommerceLogin();
+		System.out.println("Please confirm your detatil");
+		// Driver.findElement(By.linkText(MY_CART_LOCATOR)).click();
+		// Driver.findElement(By.linkText("Checkout")).click();
+		driver.findElement(By
+				.xpath("html/body/form/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table[3]/tbody/tr/td/a/img"))
+				.click();
+		// Driver.findElement(By.name("shipopt")).click();
+		// Driver.findElement(By.xpath("html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td/form[1]/table/tbody/tr[4]/td[3]/input")).click();
+		// Driver.findElement(By.id("shipopt")).isSelected();
+		driver.findElement(By.id(HOUSENO_LOCATOR)).sendKeys(HOUSENO_DATA);
+		driver.findElement(By.id("address")).sendKeys(ADD1_DATA);
+		driver.findElement(By.id(CITY_LOCATOR)).sendKeys(CITY_DATA);
+		driver.findElement(By.id("code")).sendKeys(POSTCODE_DATA);
+		driver.findElement(By.id(STATE_LOCATOR)).sendKeys(STATE_DATA);
+		driver.findElement(By.id(COUNTRY_LOCATOR)).sendKeys(COUNTRY_DATA);
+		driver.findElement(By.name("Submit")).click();
+		driver.findElement(By
+				.xpath("html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/able/tbody/tr[4]/td/table[2]/tbody/tr/td[2]/img"))
+				.click();
+		driver.findElement(By
+				.xpath("html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table[3]/tbody/tr/td[2]/a/img"))
+				.click();
+		driver.findElement(By.name("code")).sendKeys("ABC123");
+		driver.findElement(By.name("Submit")).click();
+		driver.findElement(By
+				.xpath("html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table[2]/tbody/tr/td[2]/img"))
+				.click();
+		driver.findElement(By
+				.xpath("html/body/table/tbody/tr[2]/td/table/tbody/tr/td[2]/table/tbody/tr[4]/td/form/table[2]/tbody/tr/td[2]/a/img"))
+				.click();
+		driver.findElement(By.name("Submit")).click();
+		String ExpUrl = "https://www.paypal.com/us/home";
+		if (ExpUrl.equals(Driver.getCurrentUrl())) {
+			System.out.println("You can proceed to the checkout");
+		} else {
+			System.out.println(
+					"Things don't appear to be working at the moment. Please try again later OR the information you entered is incorrect");
+		}
+		
+}
+}

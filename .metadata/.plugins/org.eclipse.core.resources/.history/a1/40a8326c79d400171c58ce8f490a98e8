@@ -1,0 +1,13 @@
+package com.maven.selenium.test;
+
+public interface EcommerceConstant {
+
+	String PAGE_TITLE = "Ez Shop Online";
+	String LOGIN_LOCATOR = "Login";
+	String PASSWORD_DATA = "pwd1";
+	String PASSWORD_LOCATOR = "password";
+	String EMAIL_DATA = "test4@gmail.com";
+	String EMAIL_LOCATOR = "email";
+	String WEBPAGE_URL = "http://ecommerce.saipratap.net/customerlogin.php";
+
+}

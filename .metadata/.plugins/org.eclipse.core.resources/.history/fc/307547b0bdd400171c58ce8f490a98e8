@@ -1,0 +1,9 @@
+package com.Maven.TestNG.Test;
+
+import org.testng.annotations.Test;
+
+public class EcommercetTest {
+  @Test
+  public void f() {
+  }
+}

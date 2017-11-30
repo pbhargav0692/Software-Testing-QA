@@ -1,0 +1,23 @@
+package com.maven.selenium.test;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import junit.framework.Assert;
+
+public interface EcommerceConstant {
+
+	void main(String[] args) throws Exception;
+
+	String PAGE_TITLE = "Ez Shop Online";
+	String LOGIN_LOCATOR = "Login";
+	String PASSWORD_DATA = "pwd1";
+	String PASSWORD_LOCATOR = "password";
+	String EMAIL_DATA = "test4@gmail.com";
+	String EMAIL_LOCATOR = "email";
+	String WEBPAGE_URL = "http://ecommerce.saipratap.net/customerlogin.php";
+
+}

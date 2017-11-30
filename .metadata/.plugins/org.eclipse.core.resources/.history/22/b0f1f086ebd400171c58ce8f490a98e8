@@ -1,0 +1,24 @@
+package com.MavenTestNG.Dataprovider.Test;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+
+public class MavenTestNGDataproviderTest extends BaseTest implements EcommerceConstant {
+	@DataProvider(name = "SuccessIds")
+	public static Object [][] SuccessIDs(){
+			 return new Object[][]{{"test1@gmail.com","pwd1"}, {"test2@gmail.com","pwd2"},
+				 {"test3@gmail.com","pwd3"}, {"test4@gmail.com", "pwd4"}};				 
+			 }
+			 /*String[][] ids = { { "test1@gmail.com", "pwd1" }, {
+			 "test2@gmail.com", "pwd2" }, { "test3@gmail.com", "pwd3" }, {
+			 "test4@gmail.com", "pwd4" }*
+	
+  @Test(dataProvider = "SuccessIds")
+  public void EcommLoginTest(String EmailId, String Pwd) {
+	  
+	  
+	  
+	  
+  }
+}

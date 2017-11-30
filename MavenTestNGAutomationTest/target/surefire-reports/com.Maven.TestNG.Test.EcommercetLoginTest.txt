@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.Maven.TestNG.Test.EcommercetLoginTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.12 sec <<< FAILURE!
+cleanup(com.Maven.TestNG.Test.EcommercetLoginTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.Maven.TestNG.Test.EcommercetLoginTest.cleanup(EcommercetLoginTest.java:37)
+

@@ -1,0 +1,17 @@
+package com.Maven.TestNG.Test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class EcommercetLoginTest {
+  @BeforeTest
+  public void setup(){
+	  WebDriver driver = new FirefoxDriver();
+	  driver.get("http://ecommerce.saipratap.net/customerlogin.php");
+  }
+	@Test
+  public void f() {
+  }
+}
