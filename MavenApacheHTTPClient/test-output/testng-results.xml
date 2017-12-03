@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1223" started-at="2017-12-03T02:04:50Z" finished-at="2017-12-03T02:04:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1223" started-at="2017-12-03T02:04:50Z" finished-at="2017-12-03T02:04:51Z">
+      <class name="com.MavenApacheHttpClient.test.CustomerServiceTestngDataProviderTest">
+        <test-method status="PASS" signature="testGetCustomerwith200(java.lang.String)[pri:0, instance:com.MavenApacheHttpClient.test.CustomerServiceTestngDataProviderTest@64bf3bbf]" name="testGetCustomerwith200" duration-ms="1017" started-at="2017-12-02T18:04:50Z" data-provider="SuccessID" finished-at="2017-12-02T18:04:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhargav]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCustomerwith200 -->
+      </class> <!-- com.MavenApacheHttpClient.test.CustomerServiceTestngDataProviderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
