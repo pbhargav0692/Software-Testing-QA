@@ -1,0 +1,11 @@
+DEBUG - This is just a log that i want to print0
+DEBUG - This is just a log that i want to print1
+DEBUG - This is just a log that i want to print2
+DEBUG - This is just a log that i want to print3
+DEBUG - This is just a log that i want to print4
+DEBUG - This is just a log that i want to print5
+DEBUG - This is just a log that i want to print6
+DEBUG - This is just a log that i want to print7
+DEBUG - This is just a log that i want to print8
+DEBUG - This is just a log that i want to print9
+DEBUG - This is just a log that i want to print10
