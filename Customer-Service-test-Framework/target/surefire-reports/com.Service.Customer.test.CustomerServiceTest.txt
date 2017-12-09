@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.Service.Customer.test.CustomerServiceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.444 sec <<< FAILURE!
+testGetCustomerwith200(com.Service.Customer.test.CustomerServiceTest)  Time elapsed: 2.609 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.Service.Customer.test.CustomerServiceTest.testGetCustomerwith200(CustomerServiceTest.java:47)
+

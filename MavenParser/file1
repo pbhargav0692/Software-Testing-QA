@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CUSTOMER>
+    <CITY>Fremont</CITY>
+    <FIRSTNAME>John</FIRSTNAME>
+    <ID>1</ID>
+    <LASTNAME>xyz</LASTNAME>
+    <STREET>main st</STREET>
+</CUSTOMER>
